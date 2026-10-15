@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pacientes · Clínica Dunas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+<header class="topbar">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2 py-2">
+    <a class="brand" href="index.html"><span class="mark">✚</span> Clínica Dunas</a>
+    <nav class="menu"><a href="index.html">Inicio</a><a href="pacientes.html" class="on">Pacientes</a><a href="medicos.html">Médicos</a><a href="especialidades.html">Especialidades</a><a href="horarios.html">Horarios</a><a href="citas.html">Citas</a><a href="usuarios.html">Usuarios</a></nav>
+  </div>
+</header>
+
+<main class="container pb-4">
+  <div class="page-head">
+    <div class="arch-num">124</div>
+    <div>
+      <div class="crumb"><a href="index.html">Inicio</a> / Pacientes</div>
+      <h1 class="display">Pacientes</h1>
+    </div>
+  </div>
+
+  <div class="card-d toolbar">
+    <input class="form-control" style="max-width:280px" placeholder="Buscar en pacientes…">
+    <select class="form-select" style="max-width:190px"><option>Todos</option><option>Registrados este mes</option></select>
+    <a href="#" class="btn btn-dune ms-auto">+ Nuevo paciente</a>
+  </div>
+
+  <div class="table-wrap">
+    <div class="table-responsive">
+      <table class="table table-hover table-dunas align-middle">
+        <thead><tr><th>N.º</th><th>DNI</th><th>Paciente</th><th>Celular</th><th>Correo</th><th>Registro</th><th>Acciones</th></tr></thead>
+        <tbody>
+        <tr><td><span class="id">001</span></td><td>45128390</td><td><div class="who"><i>CH</i><div><div class="fw-bold">Carmen Quispe Huamán</div></div></div></td><td>987 412 306</td><td>carmen.quispe@correo.com</td><td>03/09/2026</td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">002</span></td><td>70231845</td><td><div class="who"><i>LT</i><div><div class="fw-bold">Luis Alberto Torres</div></div></div></td><td>954 120 778</td><td>luis.torres@correo.com</td><td>07/09/2026</td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">003</span></td><td>41987236</td><td><div class="who"><i>MS</i><div><div class="fw-bold">María Fernanda Salas</div></div></div></td><td>961 503 224</td><td>mf.salas@correo.com</td><td>12/09/2026</td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">004</span></td><td>72845019</td><td><div class="who"><i>JR</i><div><div class="fw-bold">José Antonio Ramos</div></div></div></td><td>912 874 335</td><td>jose.ramos@correo.com</td><td>18/09/2026</td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">005</span></td><td>46310572</td><td><div class="who"><i>RV</i><div><div class="fw-bold">Rosa Elena Vargas</div></div></div></td><td>989 645 120</td><td>rosa.vargas@correo.com</td><td>24/09/2026</td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">006</span></td><td>73019846</td><td><div class="who"><i>DC</i><div><div class="fw-bold">Diego Paredes Cruz</div></div></div></td><td>945 337 981</td><td>diego.paredes@correo.com</td><td>30/09/2026</td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">007</span></td><td>40672913</td><td><div class="who"><i>AM</i><div><div class="fw-bold">Ana Lucía Medina</div></div></div></td><td>977 208 456</td><td>ana.medina@correo.com</td><td>05/10/2026</td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">008</span></td><td>75120364</td><td><div class="who"><i>PL</i><div><div class="fw-bold">Pedro Chávez León</div></div></div></td><td>932 114 670</td><td>pedro.chavez@correo.com</td><td>09/10/2026</td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="foot-table">
+      <span>Mostrando 1–8 de 124</span>
+      <div class="pager"><span>‹</span><span class="on">1</span><span>2</span><span>3</span><span>›</span></div>
+    </div>
+  </div>
+</main>
+
+<p class="note">Prototipo de diseño · Clínica Dunas · Semana 04 · no funcional</p>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

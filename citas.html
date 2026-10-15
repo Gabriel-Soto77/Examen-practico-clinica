@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Citas · Clínica Dunas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+<header class="topbar">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2 py-2">
+    <a class="brand" href="index.html"><span class="mark">✚</span> Clínica Dunas</a>
+    <nav class="menu"><a href="index.html">Inicio</a><a href="pacientes.html">Pacientes</a><a href="medicos.html">Médicos</a><a href="especialidades.html">Especialidades</a><a href="horarios.html">Horarios</a><a href="citas.html" class="on">Citas</a><a href="usuarios.html">Usuarios</a></nav>
+  </div>
+</header>
+
+<main class="container pb-4">
+  <div class="page-head">
+    <div class="arch-num">58</div>
+    <div>
+      <div class="crumb"><a href="index.html">Inicio</a> / Citas</div>
+      <h1 class="display">Citas</h1>
+    </div>
+  </div>
+
+  <div class="card-d toolbar">
+    <input class="form-control" style="max-width:280px" placeholder="Buscar en citas…">
+    <select class="form-select" style="max-width:190px"><option>Todos los estados</option><option>Pendiente</option><option>Confirmada</option><option>Cancelada</option><option>Atendida</option></select>
+    <button class="btn btn-dune ms-auto" data-bs-toggle="modal" data-bs-target="#modalCita" type="button">+ Nueva cita</button>
+  </div>
+
+  <div class="table-wrap">
+    <div class="table-responsive">
+      <table class="table table-hover table-dunas align-middle">
+        <thead><tr><th>N.º</th><th>Paciente</th><th>Médico</th><th>Especialidad</th><th>Fecha</th><th>Hora</th><th>Estado</th><th>Acciones</th></tr></thead>
+        <tbody>
+        <tr><td><span class="id">001</span></td><td><div class="who"><i>CH</i><div><div class="fw-bold">Carmen Quispe Huamán</div></div></div></td><td>Dra. Lucía Rojas Prado</td><td>Medicina general</td><td>21/10/2026</td><td><b>10:30</b></td><td><span class="st st-ok">Confirmada</span></td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">002</span></td><td><div class="who"><i>LT</i><div><div class="fw-bold">Luis Alberto Torres</div></div></div></td><td>Dr. Marco Salazar Vera</td><td>Pediatría</td><td>21/10/2026</td><td><b>11:00</b></td><td><span class="st st-pend">Pendiente</span></td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">003</span></td><td><div class="who"><i>MS</i><div><div class="fw-bold">María Fernanda Salas</div></div></div></td><td>Dra. Elena Campos Ruiz</td><td>Ginecología</td><td>22/10/2026</td><td><b>15:20</b></td><td><span class="st st-ok">Confirmada</span></td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">004</span></td><td><div class="who"><i>JR</i><div><div class="fw-bold">José Antonio Ramos</div></div></div></td><td>Dr. Andrés Mejía Soto</td><td>Odontología</td><td>22/10/2026</td><td><b>16:00</b></td><td><span class="st st-pend">Pendiente</span></td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">005</span></td><td><div class="who"><i>RV</i><div><div class="fw-bold">Rosa Elena Vargas</div></div></div></td><td>Dra. Sofía Delgado Inga</td><td>Dermatología</td><td>23/10/2026</td><td><b>09:30</b></td><td><span class="st st-no">Cancelada</span></td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">006</span></td><td><div class="who"><i>DC</i><div><div class="fw-bold">Diego Paredes Cruz</div></div></div></td><td>Dra. Lucía Rojas Prado</td><td>Medicina general</td><td>20/10/2026</td><td><b>08:30</b></td><td><span class="st st-done">Atendida</span></td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">007</span></td><td><div class="who"><i>AM</i><div><div class="fw-bold">Ana Lucía Medina</div></div></div></td><td>Dr. Marco Salazar Vera</td><td>Pediatría</td><td>20/10/2026</td><td><b>09:30</b></td><td><span class="st st-done">Atendida</span></td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        <tr><td><span class="id">008</span></td><td><div class="who"><i>PL</i><div><div class="fw-bold">Pedro Chávez León</div></div></div></td><td>Dr. Andrés Mejía Soto</td><td>Odontología</td><td>24/10/2026</td><td><b>10:45</b></td><td><span class="st st-ok">Confirmada</span></td><td><a href="#" class="btn btn-sand btn-sm">Ver</a> <a href="#" class="btn btn-sand btn-sm">Editar</a> <a href="#" class="btn btn-sand btn-sm">Anular</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="foot-table">
+      <span>Mostrando 1–8 de 58</span>
+      <div class="pager"><span>‹</span><span class="on">1</span><span>2</span><span>3</span><span>›</span></div>
+    </div>
+  </div>
+</main>
+
+<div class="modal fade" id="modalCita" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="display fs-3 m-0">Nueva cita</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-md-6"><label class="form-label">Paciente</label><select class="form-select"><option>Carmen Quispe Huamán</option></select></div>
+          <div class="col-md-6"><label class="form-label">Especialidad</label><select class="form-select"><option>Medicina general</option></select></div>
+          <div class="col-md-6"><label class="form-label">Médico</label><select class="form-select"><option>Dra. Lucía Rojas Prado</option></select></div>
+          <div class="col-md-6"><label class="form-label">Fecha</label><input type="date" class="form-control" value="2026-10-21"></div>
+          <div class="col-12"><label class="form-label">Horarios disponibles</label>
+            <div class="row g-2">
+              <div class="col-3 col-md-2"><div class="slot">09:00</div></div><div class="col-3 col-md-2"><div class="slot off">09:30</div></div>
+              <div class="col-3 col-md-2"><div class="slot">10:00</div></div><div class="col-3 col-md-2"><div class="slot on">10:30</div></div>
+              <div class="col-3 col-md-2"><div class="slot">11:00</div></div><div class="col-3 col-md-2"><div class="slot off">11:30</div></div>
+            </div>
+            <div class="small muted mt-2">Los horarios tachados ya están ocupados.</div>
+          </div>
+          <div class="col-12"><label class="form-label">Motivo de la consulta</label><textarea class="form-control" rows="2" placeholder="Describe brevemente el motivo"></textarea></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sand" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-dune">Guardar cita</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="note">Prototipo de diseño · Clínica Dunas · Semana 04 · no funcional</p>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
